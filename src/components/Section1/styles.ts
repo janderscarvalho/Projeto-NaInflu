@@ -7,6 +7,7 @@ export const MainContainer = styled.div`
 position: relative;
 width: 100%;
 height: 80vh;
+margin-top: -3rem;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -14,6 +15,7 @@ background-color: #282828;
 padding: 1rem;
 border: 1px solid #767676;
 z-index: 1;
+overflow: auto; 
 
 @media (max-width: 767px) {
 flex-direction: column;
@@ -37,6 +39,7 @@ export const MainText = styled.div`
   max-width: 40%;
   max-height: 90%;
   margin-right: 3rem;
+  max-height: 800px;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -80,7 +83,6 @@ export const MainImage = styled.div`
   background-size: cover;
   background-position: center;
   border: 1px solid #767676;
-  z-index: 1;
   float: left;
 
   @media (max-width: 767px) {

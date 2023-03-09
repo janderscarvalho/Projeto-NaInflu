@@ -10,11 +10,16 @@ export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
+  border: #553268;
   z-index: 1;
-  @media (max-width: 767px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
+@media (max-width: 767px) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem 1rem;
+}
 `;
 
 export const Logo = styled.img`
