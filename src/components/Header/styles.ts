@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   top: 0;
   border: #553268;
-  z-index: 1;
+  z-index: 2;
 
 @media (max-width: 767px) {
   flex-direction: column;
@@ -31,9 +31,9 @@ export const Logo = styled.img`
 `;
 
 export const Button = styled.button`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #F8FFFC;
   background-color: transparent;
   border: 0;
@@ -61,3 +61,26 @@ export const Button = styled.button`
     margin: 10px;
   }
 `;
+
+export const ButtonContato = styled.button`
+  font-family: 'Abel', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #F8FFFC;
+  background-color: #9766F5;
+  border: 2px solid black;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: black;
+    color: #F8FFFC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+

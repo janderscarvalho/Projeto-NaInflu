@@ -9,7 +9,10 @@ import mainft2 from '../../assets/somos.svg';
           <MainContainer>
             <MainText>
               <h2>Sobre nós</h2>
-              <p>Oiie, me chamo Natália Abreu, fundei a Na.Influ em março de 2022, com objetivo de conectar marcas e criadores de conteúdo.  Conheço o universo digital desde 2012, tenho amplo conhecimento por marketing de influencia, vivencio e respiro diariamente esse mundo digital.
+              <p>O que é um marketing de influência inovador, diferenciado e autentico? 
+A nossa missão tem como objetivo desmarketizar as estratégias de produção de conteúdo, com foco em humanizar a marca, gerando uma aproximidade maior de conexão, idenficação e engajamento com pessoas.  
+A agencia Na.Influ está atuando desde o ano de 2020, tendo como diferencial uma excelente lista mailing de nichos engajados na internet, desde micro, médio e macro criadores de conteúdo. 
+
 Decidi expandir e compartilhar meu conhecimento com marcas e criadores para que tenham mais visibilidade e qualidade de conteúdo digital, proporcionando um resultado satisfatório e produtivo para ambos os lados. 
 
 Formação em admiração e especialização em Marketing Digital. 
@@ -18,5 +21,5 @@ Formação em admiração e especialização em Marketing Digital.
             </MainText>
             <MainImage/>
           </MainContainer>
-        );
+       );
       };

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import main1 from '../../assets/ftmain1.svg'
+import main from '../../assets/main.svg'
 
 export const MainContainer = styled.div`
   position: relative;
@@ -8,21 +8,23 @@ export const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+  border: none;
 
   &:before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 4rem;
     left: 0;
     width: 100%;
-    height: 95%;
+    height: 90%;
     background-color: #282828;
-    background-image: url(${main1});
+    background-image: url(${main});
+
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
-    z-index: -1;
+    opacity: 0.3;
+    
+    border: none;
   }
 
   @media (max-width: 768px) {
@@ -38,38 +40,39 @@ export const MainText = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #767676;
-  opacity: 0.9;
+ 
+  transition: filter 0.2s;
   
   border-radius: 0.5rem;
-  width: 50%;
-  z-index: 2;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: medium;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Abel', sans-serif;
+
+  font-weight: 600;
   
  p {
-    color: #F8FFFC;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
+    color: #553268;
+    font-size: 4rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
     margin: 0;
     margin-top: 1rem;
   }
 
   & > p:first-child {
-    color: #F8FFFC;
-    font-size: 48px;
-    font-family: 'Poppins', sans-serif;
+    color: #553268;
+    font-size: 3rem;
+    font-family: 'Abel', sans-serif;
     font-weight: bold;
     margin-bottom: 2rem;
+    
   }
 
  button {
     background-color: #553268;
     color: #F8FFFC;
     font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-weight: medium;
     margin-top: 30px;
     padding: 20px 40px;
@@ -86,6 +89,7 @@ export const MainText = styled.div`
   @media (max-width: 768px) {
     text-align: center;
     width: 100%;
+    border: none;
 
     & > p:first-child {
       font-size: 32px;

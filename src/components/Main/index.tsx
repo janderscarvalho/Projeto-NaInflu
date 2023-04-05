@@ -10,11 +10,12 @@ export function Main () {
 <MainContainer>
      <MainText>
      <div>
-        <p>Conectamos pessoas e conteúdo de qualidade</p>
-        <p>+ de 5 Milhões de contas alcançadas</p>
-        <p>+ de 100 influencers micro, médio e macro</p>
-        <button>Entre em contato</button>
+        <p>Desmarketize-se: </p>
+        <p>Humanizando marcas e produzindo valor.</p>
+        <p>+ de 100 Milhões de contas alcançadas</p>
+        <p>+ de 1000 influencers micro, médio e macro</p>
     </div>
+    <button>Entre em contato</button>
     </MainText>
 </MainContainer>
     );

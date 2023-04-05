@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logoimg from '../../assets/logo.svg'
 
-import { HeaderContainer, Button, Logo } from './styles'
+import { HeaderContainer, Button, ButtonContato, Logo } from './styles'
 
 
 
@@ -14,7 +14,7 @@ export function Header () {
       <Button>Início</Button>
       <Button>Sobre</Button>
       <Button>Depoimentos</Button>
-      <Button>Contato</Button>
+      <ButtonContato>Contato</ButtonContato>
     </div>
   </HeaderContainer>
     ) 
