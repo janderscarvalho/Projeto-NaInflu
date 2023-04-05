@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Depoimentos } from './components/Depoimentos';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -18,7 +19,9 @@ export function App() {
     <Section1></Section1>
     <Section2></Section2>
     <Section3></Section3>
+    <Depoimentos></Depoimentos>
     <Footer></Footer>
+    
      <GlobalStyle />
     </>
   );

@@ -63,24 +63,30 @@ export const Button = styled.button`
 `;
 
 export const ButtonContato = styled.button`
-  font-family: 'Abel', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #F8FFFC;
   background-color: #9766F5;
-  border: 2px solid black;
-  margin: 0 10px;
+  color: #F8FFFC;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 3px 8px 8px -8px #553268;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  position: relative;
 
   &:hover {
-    background-color: black;
-    color: #F8FFFC;
+    background-color: #7D50E9;
+    transform: translateY(-2px);
+    box-shadow: 3px 10px 10px -10px #553268;
   }
 
   &:focus {
     outline: none;
   }
 `;
+
+
 
 
