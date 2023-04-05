@@ -63,7 +63,7 @@ export const Button = styled.button`
 `;
 
 export const ButtonContato = styled.button`
-  background-color: #9766F5;
+  background-color: #553268;
   color: #F8FFFC;
   font-family: 'Abel', sans-serif;
   font-size: 1.5rem;

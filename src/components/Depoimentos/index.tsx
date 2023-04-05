@@ -1,4 +1,4 @@
-import { MainContainer, Title, Image, Service, DescriptionBox, DescriptionOverlay, ServicesGrid, ServiceDescription, DescriptionTitle, DescriptionText } from './styles';
+import { MainContainer, Title, StyledImage, Service, DescriptionBox, DescriptionOverlay, ServicesGrid, ServiceDescription, DescriptionTitle, DescriptionText, ImageTop } from './styles';
 import { useState } from 'react';
 import styled from "styled-components";
 import acom from '../../assets/services/acom.svg';
@@ -28,37 +28,38 @@ export function Depoimentos() {
   
     return (
       <>
+      <ImageTop></ImageTop>
       <MainContainer>
-        <Title>Nossos Serviços</Title>
+        <Title>Depoimentos de Parceiros</Title>
         <ServicesGrid>
 
           <Service onClick={() => setShowProspec(true)}>
-            <Image src={prospec} alt="Prospec" />
+            <StyledImage src={prospec} alt="Prospec" />
             <ServiceDescription>Prospecção de influenciadores digitais</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowProdu(true)}>
-            <Image src={produ} alt="Produção de Conteúdo" />
+            <StyledImage src={produ} alt="Produção de Conteúdo" />
             <ServiceDescription>Produção de Conteúdo</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowBrif(true)}>
-            <Image src={brif} alt="Briefing" />
+            <StyledImage src={brif} alt="Briefing" />
             <ServiceDescription>Briefing Criativo</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowGest(true)}>
-            <Image src={gest} alt="Gestão de Redes Sociais" />
+            <StyledImage src={gest} alt="Gestão de Redes Sociais" />
             <ServiceDescription>Gestão de Campanhas</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowBud(true)}>
-            <Image src={bud} alt="Gestão de Anúncios" />
+            <StyledImage src={bud} alt="Gestão de Anúncios" />
             <ServiceDescription>Budget </ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowAcom(true)}>
-            <Image src={acom} alt="Inclusão Digital" />
+            <StyledImage src={acom} alt="Inclusão Digital" />
             <ServiceDescription>Acompanhamento de resultados</ServiceDescription>
           </Service>
 
@@ -68,7 +69,7 @@ export function Depoimentos() {
         
         {showProspec && (
           <DescriptionBox>
-            <Image src={prospec} alt="Prospecção" />
+            <StyledImage src={prospec} alt="Prospecção" />
             <DescriptionTitle>Prospecção de influenciadores digitais</DescriptionTitle>
             <DescriptionText>Identificação de influenciadores relevantes para a marca e sua audiência;</DescriptionText>
           </DescriptionBox>
@@ -76,7 +77,7 @@ export function Depoimentos() {
 
         {showProdu && (
           <DescriptionBox>
-            <Image src={produ} alt="Produção de Conteúdo" />
+            <StyledImage src={produ} alt="Produção de Conteúdo" />
             <DescriptionTitle>Produção de Conteúdo</DescriptionTitle>
             <DescriptionText>Criação de conteúdo criativo para a campanha de marketing;</DescriptionText>
           </DescriptionBox>
@@ -84,7 +85,7 @@ export function Depoimentos() {
 
         {showBrif && (
           <DescriptionBox>
-            <Image src={brif} alt="Briefing" />
+            <StyledImage src={brif} alt="Briefing" />
             <DescriptionTitle>Briefing Criativo</DescriptionTitle>
             <DescriptionText>Estratégia de campanha em conjunto com o cliente;</DescriptionText>
           </DescriptionBox>
@@ -92,7 +93,7 @@ export function Depoimentos() {
 
            {showGest && (
           <DescriptionBox>
-            <Image src={gest} alt="Gestão" />
+            <StyledImage src={gest} alt="Gestão" />
             <DescriptionTitle>Gestão de Campanhas</DescriptionTitle>
             <DescriptionText>Monitoramento e análise dos resultados da campanha;
             </DescriptionText>
@@ -101,7 +102,7 @@ export function Depoimentos() {
 
           {showBud && (
           <DescriptionBox>
-            <Image src={bud} alt="Budget" />
+            <StyledImage src={bud} alt="Budget" />
             <DescriptionTitle>Briefing Criativo</DescriptionTitle>
             <DescriptionText>Negociação e gestão de contratos com os influenciadores;</DescriptionText>
           </DescriptionBox>
@@ -109,7 +110,7 @@ export function Depoimentos() {
 
           {showAcom && (
           <DescriptionBox>
-            <Image src={acom} alt="Acompanhamento de resultados " />
+            <StyledImage src={acom} alt="Acompanhamento de resultados " />
             <DescriptionTitle>Acompanhamento de resultados </DescriptionTitle>
             <DescriptionText>Relatórios e feedback para o cliente.</DescriptionText>
           </DescriptionBox>

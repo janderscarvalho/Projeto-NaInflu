@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import main from '../../assets/main.svg'
+import main1 from '../../assets/main1.svg'
 
 export const MainContainer = styled.div`
   position: relative;
@@ -8,7 +8,7 @@ export const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+
 
   &:before {
     content: "";
@@ -18,11 +18,11 @@ export const MainContainer = styled.div`
     width: 100%;
     height: 90%;
     background-color: #282828;
-    background-image: url(${main});
+    background-image: url(${main1});
 
     background-size: cover;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.1;
     
     border: none;
   }
@@ -40,24 +40,25 @@ export const MainText = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
-  transition: filter 0.2s;
-  
-  border-radius: 0.5rem;
-  width: 100%;
+  background-color: #ffffff;
+  border: 1.5rem;
+  box-shadow: 8px 8px 30px -8px #553268;
+  border-radius: 1rem;
+  width: 70%;
   z-index: 1;
   font-family: 'Abel', sans-serif;
-
   font-weight: 600;
   
- p {
-    color: #553268;
-    font-size: 4rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: 600;
-    margin: 0;
-    margin-top: 1rem;
-  }
+  p {
+  color: #553268;
+  font-size: 4rem;
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 1rem;
+
+  display: column;
+}
 
   & > p:first-child {
     color: #553268;
@@ -65,6 +66,7 @@ export const MainText = styled.div`
     font-family: 'Abel', sans-serif;
     font-weight: bold;
     margin-bottom: 2rem;
+
     
   }
 
@@ -80,10 +82,15 @@ export const MainText = styled.div`
     border-radius: 0.25rem;
     transition: filter 0.2s;
     
-
     &:hover {
-      filter: brightness(0.9);
-    }
+    background-color: #7D50E9;
+    transform: translateY(-2px);
+    box-shadow: 3px 10px 10px -10px #553268;
+  }
+
+  &:focus {
+    outline: none;
+  }
   }
 
   @media (max-width: 768px) {

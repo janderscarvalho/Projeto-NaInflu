@@ -5,6 +5,7 @@ import produ from '../../assets/services/produ.svg';
 import brif from '../../assets/services/brif.svg';
 import gest from '../../assets/services/gest.svg';
 import bud from '../../assets/services/bud.svg';
+import main from '../../assets/main.svg'
 
 interface DescriptionOverlayProps {
   showDescription: boolean;
@@ -14,11 +15,11 @@ interface DescriptionOverlayProps {
 
 export const MainContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #ffffff;
   padding: 0;
   border: 0;
-  margin-top: 60vh;
+  margin-top: 10vh;
 `;
 
 export const Title = styled.h1`
@@ -59,7 +60,7 @@ export const Service = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const StyledImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -111,4 +112,36 @@ export const DescriptionText = styled.p`
   font-size: 1;
   color: #555;
   margin: 1rem 0;
+`;
+
+export const ImageTop = styled.div`
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #282828;
+    background-image: url(${main});
+
+    background-size: cover;
+    background-position: center;
+    
+    
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
