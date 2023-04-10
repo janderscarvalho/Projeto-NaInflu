@@ -24,8 +24,7 @@ export const MainContainer = styled.div`
 export const Title = styled.h1`
   font-family: 'Abel', sans-serif;
   font-size: 4rem;
-  font-weight: bold;
-  color: #553268;
+  font-weight: 600;
   margin: 0;
   padding: 2rem;
   text-align: center;
@@ -96,7 +95,12 @@ export const DescriptionBox = styled.div`
   z-index: 2;
   text-align: center;
   max-width: 30%;
+
+  @media (max-width: 768px) {
+    max-width: 75%;
+  }
 `;
+
 
 export const DescriptionTitle = styled.h3`
   font-family: 'Abel', sans-serif;

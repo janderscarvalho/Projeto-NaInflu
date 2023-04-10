@@ -22,7 +22,7 @@ export const MainContainer = styled.div`
 
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.9;
     
     border: none;
   }
@@ -45,12 +45,11 @@ export const MainText = styled.div`
   box-shadow: 8px 8px 30px -8px #553268;
   border-radius: 1rem;
   width: 70%;
-  z-index: 1;
   font-family: 'Abel', sans-serif;
   font-weight: 600;
+  opacity: 0.9; 
   
   p {
-  color: #553268;
   font-size: 4rem;
   font-family: 'Abel', sans-serif;
   font-weight: 600;
@@ -61,7 +60,6 @@ export const MainText = styled.div`
 }
 
   & > p:first-child {
-    color: #553268;
     font-size: 3rem;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
