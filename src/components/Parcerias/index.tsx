@@ -42,8 +42,10 @@ export function Section2 () {
             // adicione mais itens aqui  ];
 
          return (
+          <div id="parcerias">
+          <Titulo >Nossas Parcerias</Titulo>
               <ParceriasContainer>
-                <Titulo>Nossas Parcerias</Titulo>
+              
 
               <MainContainer>
                 {items.map((item) => (
@@ -54,5 +56,6 @@ export function Section2 () {
                 ))}
               </MainContainer>
               </ParceriasContainer>
+              </div>
             );
           }

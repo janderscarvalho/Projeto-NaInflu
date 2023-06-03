@@ -3,8 +3,9 @@ import main1 from '../../assets/main1.svg'
 
 export const MainContainer = styled.div`
   position: relative;
+  
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +14,7 @@ export const MainContainer = styled.div`
   &:before {
     content: "";
     position: absolute;
-    top: 4rem;
+    top: 0rem;
     left: 0;
     width: 100%;
     height: 90%;
@@ -30,14 +31,16 @@ export const MainContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
+    margin-left: 0.5rem;
   }
 `;
 
 export const MainText = styled.div`
   
-  
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -48,25 +51,32 @@ export const MainText = styled.div`
   font-family: 'Abel', sans-serif;
   font-weight: 600;
   opacity: 0.9; 
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+
   
   p {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: 'Abel', sans-serif;
   font-weight: 600;
   margin: 0;
   margin-top: 1rem;
+  margin-left: 1rem;
 
   display: column;
-}
-
-  & > p:first-child {
-    font-size: 3rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: bold;
-    margin-bottom: 2rem;
-
-    
   }
+
+  a {
+    font-size: 2rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+  }
+
+
 
  button {
     background-color: #553268;

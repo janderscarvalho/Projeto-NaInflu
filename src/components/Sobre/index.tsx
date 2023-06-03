@@ -6,7 +6,7 @@ import mainft2 from '../../assets/somos.svg';
     export function Section1 () {  
 
         return (
-          <MainContainer>
+          <MainContainer id="sobre">
             <MainText>
               <h2>Sobre nós</h2>
               <p>O que é um marketing de influência inovador, diferenciado e autentico? 

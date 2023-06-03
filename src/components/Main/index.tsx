@@ -7,13 +7,13 @@ export function Main () {
 
     return (
 
-<MainContainer>
+<MainContainer id="inicio">
      <MainText>
      <div>
-        <p>Desmarketize-se: </p>
+        <h1>Desmarketize-se: </h1>
         <p>Humanizando marcas e produzindo valor.</p>
-        <p>+ de 100 Milhões de contas alcançadas</p>
-        <p>+ de 1000 influencers micro, médio e macro</p>
+        <a>+ de 100 Milhões de contas alcançadas</a>
+        <a>+ de 1000 influencers micro, médio e macro</a>
     </div>
     <button>Entre em contato</button>
     </MainText>

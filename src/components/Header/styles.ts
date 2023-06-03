@@ -6,27 +6,30 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   background-color: #553268;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   width: 100%;
+  height: 80px;
   top: 0;
   border: #553268;
-  z-index: 2;
+  z-index: 1;
+
 
 @media (max-width: 767px) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 6.5rem;
   padding: 2rem 1rem;
 }
 `;
 
 export const Logo = styled.img`
-  margin-right: auto;
+  
   @media (max-width: 767px) {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: -1rem;
+    
   }
 `;
 
@@ -57,8 +60,8 @@ export const Button = styled.button`
   }
 
   @media (max-width: 767px) {
-    font-size: 0.8rem;
-    margin: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 `;
 
@@ -84,6 +87,12 @@ export const ButtonContato = styled.button`
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+
   }
 `;
 

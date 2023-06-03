@@ -13,16 +13,25 @@ interface DescriptionOverlayProps {
 
 
 export const MainContainer = styled.div`
+  display: block;
+  margin-top: auto;
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
   padding: 0;
   border: 0;
   margin-top: 60vh;
+
+  @media (max-width: 768px) {
+    margin-top: 90vh;
+    margin-bottom: 10rem;
+  }
 `;
+
 
 export const Title = styled.h1`
   font-family: 'Abel', sans-serif;
+  
   font-size: 4rem;
   font-weight: 600;
   margin: 0;
@@ -33,12 +42,21 @@ export const Title = styled.h1`
 export const ServicesGrid = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
   margin: 0 auto;
   padding: 2rem;
-  max-width: 1200px;
+  width: 1000px;
+  height: 800px;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+  }
+
+
 `;
 
 export const Service = styled.div`
