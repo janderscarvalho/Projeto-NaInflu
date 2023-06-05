@@ -21,5 +21,6 @@ Formação em admiração e especialização em Marketing Digital.
             </MainText>
             <MainImage/>
           </MainContainer>
+          
        );
       };

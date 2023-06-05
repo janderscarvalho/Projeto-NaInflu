@@ -28,7 +28,7 @@ export function Section3() {
   
     return (
       <>
-      <MainContainer id="serviços">
+      <MainContainer  id="serviços" >
         <Title>Nossos Serviços</Title>
         <ServicesGrid>
 

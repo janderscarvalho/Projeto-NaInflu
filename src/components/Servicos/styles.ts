@@ -10,28 +10,25 @@ interface DescriptionOverlayProps {
   showDescription: boolean;
 }
 
-
-
 export const MainContainer = styled.div`
   display: block;
-  margin-top: auto;
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
   padding: 0;
   border: 0;
   margin-top: 60vh;
+  transform: scale(0.9); /* Valor ajustado para diminuir a escala */
 
   @media (max-width: 768px) {
-    margin-top: 90vh;
-    margin-bottom: 10rem;
+    margin-top: 40vh;
+    margin-bottom: -15rem;
+    transform: scale(0.8); /* Valor ajustado para dispositivos móveis */
   }
 `;
 
-
 export const Title = styled.h1`
   font-family: 'Abel', sans-serif;
-  
   font-size: 4rem;
   font-weight: 600;
   margin: 0;
@@ -43,20 +40,17 @@ export const ServicesGrid = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   grid-gap: 2rem;
   margin: 0 auto;
   padding: 2rem;
-  width: 1000px;
-  height: 800px;
+  max-width: 1000px;
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
+    justify-items: center;
   }
-
-
 `;
 
 export const Service = styled.div`
@@ -70,7 +64,7 @@ export const Service = styled.div`
   margin-bottom: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -115,10 +109,9 @@ export const DescriptionBox = styled.div`
   max-width: 30%;
 
   @media (max-width: 768px) {
-    max-width: 75%;
+    max-width: 40%;
   }
 `;
-
 
 export const DescriptionTitle = styled.h3`
   font-family: 'Abel', sans-serif;
@@ -130,7 +123,7 @@ export const DescriptionTitle = styled.h3`
 
 export const DescriptionText = styled.p`
   font-family: 'Abel', sans-serif;
-  font-size: 1;
+  font-size: 1rem;
   color: #555;
   margin: 1rem 0;
 `;

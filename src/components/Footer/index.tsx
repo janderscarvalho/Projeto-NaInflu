@@ -1,25 +1,30 @@
-import { useState } from 'react'
-import logoimg from '../../assets/logo.svg'
+import { useState } from 'react';
+import logoimg from '../../assets/logo.svg';
+import { FaWhatsapp, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
-import { FooterContainer, SocialIcons, CreditsContainer,CreditsText, CreditsSubtext } from './styles'
+import { FooterContainer, SocialIcons, CreditsContainer, CreditsText, CreditsSubtext } from './styles';
 
-const tempIcon = () => {
+interface FooterProps {
+  onOpenNewEmailModal: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenNewEmailModal }) => {
   return (
-    <div>Icone temporário</div>
-  );
-};
-
-export const Footer: React.FC = () => {
-  return (
-    <FooterContainer>
+    <FooterContainer >
       <SocialIcons>
-        <div>Icone temporário</div>
-        <div>Icone temporário</div>
-        <div>Icone temporário</div>
+        <button onClick={onOpenNewEmailModal} style={{ marginRight: '10px' }}>
+          <FaWhatsapp size={44} />
+        </button>
+        <button onClick={onOpenNewEmailModal} style={{ marginRight: '10px' }}>
+          <FaLinkedin size={44} />
+        </button>
+        <button onClick={onOpenNewEmailModal} style={{ marginRight: '10px' }}>
+          <FaEnvelope size={44} />
+        </button>
       </SocialIcons>
       <CreditsContainer>
-        <CreditsText>Créditos do autor</CreditsText>
-        <CreditsSubtext>Contato com texto e subtexto</CreditsSubtext>
+        <CreditsText >Images and Site by Jander Stival</CreditsText>
+        <CreditsSubtext>janderscarvalho@gmail.com</CreditsSubtext>
       </CreditsContainer>
     </FooterContainer>
   );

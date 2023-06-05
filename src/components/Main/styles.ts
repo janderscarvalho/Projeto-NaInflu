@@ -3,13 +3,12 @@ import main1 from '../../assets/main1.svg'
 
 export const MainContainer = styled.div`
   position: relative;
-  
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 
   &:before {
     content: "";
@@ -20,11 +19,9 @@ export const MainContainer = styled.div`
     height: 90%;
     background-color: #282828;
     background-image: url(${main1});
-
     background-size: cover;
     background-position: center;
     opacity: 0.9;
-    
     border: none;
   }
 
@@ -32,11 +29,11 @@ export const MainContainer = styled.div`
     flex-direction: column;
     height: auto;
     margin-left: 0.5rem;
+    margin-top: auto;
   }
 `;
 
 export const MainText = styled.div`
-  
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -50,24 +47,32 @@ export const MainText = styled.div`
   width: 70%;
   font-family: 'Abel', sans-serif;
   font-weight: 600;
-  opacity: 0.9; 
+  opacity: 0.9;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    height: auto;
+    width: 90%;
+    padding: 1rem;
+    margin-top: 9rem;
+    border-radius: 0.5rem;
+
+    p {
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+    }
+
+    a {
+      font-size: 1.8rem;
+    }
   }
 
-
-  
   p {
-  font-size: 3.5rem;
-  font-family: 'Abel', sans-serif;
-  font-weight: 600;
-  margin: 0;
-  margin-top: 1rem;
-  margin-left: 1rem;
-
-  display: column;
+    font-size: 3.5rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: column;
   }
 
   a {
@@ -75,30 +80,29 @@ export const MainText = styled.div`
     font-family: 'Abel', sans-serif;
     font-weight: 600;
   }
+`;
 
 
+export const ButtonContato = styled.button`
+  background-color: #553268;
+  color: #f8fffc;
+  font-size: 2rem;
+  font-family: 'Abel', sans-serif;
+  font-weight: medium;
+  margin-top: 30px;
+  padding: 20px 40px;
+  border: 0;
+  border-radius: 0.25rem;
+  transition: filter 0.2s;
 
- button {
-    background-color: #553268;
-    color: #F8FFFC;
-    font-size: 2rem;
-    font-family: 'Abel', sans-serif;
-    font-weight: medium;
-    margin-top: 30px;
-    padding: 20px 40px;
-    border: 0;
-    border-radius: 0.25rem;
-    transition: filter 0.2s;
-    
-    &:hover {
-    background-color: #7D50E9;
+  &:hover {
+    background-color: #7d50e9;
     transform: translateY(-2px);
     box-shadow: 3px 10px 10px -10px #553268;
   }
 
   &:focus {
     outline: none;
-  }
   }
 
   @media (max-width: 768px) {

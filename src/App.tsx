@@ -27,12 +27,12 @@ function handleCloseNewEmailModal(){
   return (
     <>
      <Header onOpenNewEmailModal={handleOpenNewEmailModal}></Header>
-    <Main></Main>
+    <Main onOpenNewEmailModal={handleOpenNewEmailModal}></Main>
     <Section1></Section1>
     <Section2></Section2>
     <Section3></Section3>
     
-    <Footer></Footer>
+    <Footer onOpenNewEmailModal={handleOpenNewEmailModal}></Footer>
 
     <NewEmailModal
       isOpen={IsNewEmailModalOpen}

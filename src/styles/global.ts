@@ -15,8 +15,18 @@ export const GlobalStyle = createGlobalStyle`
 
     --background: #F0F2F5;
     --shape: #FFFFFF;
+
+    
 }
 
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
 h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
 }
@@ -57,5 +67,7 @@ h1, h2, h3, h4, h5, h6, strong {
  border-radius: 0.24rem;
 
 }
+
+
 
 `
