@@ -1,4 +1,4 @@
-import { MainContainer, Title, Image, Service, DescriptionBox, DescriptionOverlay, ServicesGrid, ServiceDescription, DescriptionTitle, DescriptionText } from './styles';
+import { MainContainer, Title, Image, Service, DescriptionBox, DescriptionOverlay, ServicesGrid, ServiceDescription, DescriptionTitle, DescriptionText, ImageFoot  } from './styles';
 import { useState } from 'react';
 import styled from "styled-components";
 import acom from '../../assets/services/acom.svg';
@@ -7,6 +7,9 @@ import produ from '../../assets/services/produ.svg';
 import brif from '../../assets/services/brif.svg';
 import gest from '../../assets/services/gest.svg';
 import bud from '../../assets/services/bud.svg';
+import foot from '../../assets/footer.svg';
+
+
 
 const services = [    
   { id: 1, image: prospec, description: "Prospecção de influenciadores digitais" },
@@ -33,8 +36,8 @@ export function Section3() {
         <ServicesGrid>
 
           <Service onClick={() => setShowProspec(true)}>
-            <Image src={prospec} alt="Prospec" />
-            <ServiceDescription>Prospecção de influenciadores digitais</ServiceDescription>
+            <Image src={prospec} alt="Prospecção de influenciadores" />
+            <ServiceDescription>Prospecção de influenciadores</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowProdu(true)}>
@@ -43,24 +46,26 @@ export function Section3() {
           </Service>
 
           <Service onClick={() => setShowBrif(true)}>
-            <Image src={brif} alt="Briefing" />
+            <Image src={brif} alt="Briefing Criativo" />
             <ServiceDescription>Briefing Criativo</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowGest(true)}>
-            <Image src={gest} alt="Gestão de Redes Sociais" />
-            <ServiceDescription>Gestão de Campanhas</ServiceDescription>
-          </Service>
-
-          <Service onClick={() => setShowBud(true)}>
-            <Image src={bud} alt="Gestão de Anúncios" />
-            <ServiceDescription>Budget </ServiceDescription>
+            <Image src={gest} alt="Planejamento" />
+            <ServiceDescription>Planejamento</ServiceDescription>
           </Service>
 
           <Service onClick={() => setShowAcom(true)}>
-            <Image src={acom} alt="Inclusão Digital" />
-            <ServiceDescription>Acompanhamento de resultados</ServiceDescription>
+            <Image src={acom} alt="Algoritmo" />
+            <ServiceDescription>Algoritmo</ServiceDescription>
           </Service>
+
+          <Service onClick={() => setShowBud(true)}>
+            <Image src={bud} alt="Assessoria" />
+            <ServiceDescription>Assessoria</ServiceDescription>
+          </Service>
+
+
 
         </ServicesGrid>
         <DescriptionOverlay showDescription={showProspec || showProdu || showBrif || showGest || showBud || showAcom} onClick={() => { setShowProspec(false); setShowProdu(false); setShowBrif(false); setShowGest(false); setShowBud(false); setShowAcom(false); }} />
@@ -69,8 +74,8 @@ export function Section3() {
         {showProspec && (
           <DescriptionBox>
             <Image src={prospec} alt="Prospecção" />
-            <DescriptionTitle>Prospecção de influenciadores digitais</DescriptionTitle>
-            <DescriptionText>Identificação de influenciadores relevantes para a marca e sua audiência;</DescriptionText>
+            <DescriptionTitle>Prospecção de influenciadores </DescriptionTitle>
+            <DescriptionText>Nosso serviço de mapeamento de influenciadores oferece a você uma seleção cuidadosa de parceiros que estejam alinhados com sua marca e sua audiência. Nossa equipe especializada realiza pesquisas detalhadas para identificar influenciadores relevantes em seu nicho de mercado. Consideramos seus valores, qualidade de conteúdo e engajamento para garantir uma parceria autêntica.</DescriptionText>
           </DescriptionBox>
         )}
 
@@ -78,7 +83,7 @@ export function Section3() {
           <DescriptionBox>
             <Image src={produ} alt="Produção de Conteúdo" />
             <DescriptionTitle>Produção de Conteúdo</DescriptionTitle>
-            <DescriptionText>Criação de conteúdo criativo para a campanha de marketing;</DescriptionText>
+            <DescriptionText>Nossa equipe de produção de conteúdo oferece soluções criativas para impulsionar sua campanha de marketing como influenciador digital. Desenvolvemos conteúdo autêntico e impactante para diversas plataformas digitais, alinhado aos seus valores e público-alvo. Com pesquisa de mercado, roteiros e produção de alta qualidade.</DescriptionText>
           </DescriptionBox>
         )}
 
@@ -86,37 +91,40 @@ export function Section3() {
           <DescriptionBox>
             <Image src={brif} alt="Briefing" />
             <DescriptionTitle>Briefing Criativo</DescriptionTitle>
-            <DescriptionText>Estratégia de campanha em conjunto com o cliente;</DescriptionText>
+            <DescriptionText>Nosso serviço de Briefing Criativo é projetado para fornecer uma base sólida para a criação de conteúdo impactante. Trabalharemos em colaboração estreita, entendendo sua visão, objetivos e público-alvo. Com base nisso, nossa equipe criativa desenvolverá ideias inovadoras e estratégias que se destacarão no mercado.</DescriptionText>
           </DescriptionBox>
         )}
 
            {showGest && (
           <DescriptionBox>
             <Image src={gest} alt="Gestão" />
-            <DescriptionTitle>Gestão de Campanhas</DescriptionTitle>
-            <DescriptionText>Monitoramento e análise dos resultados da campanha;
+            <DescriptionTitle>Planejamento</DescriptionTitle>
+            <DescriptionText>Nosso serviço de Planejamento de Campanha oferece estratégias personalizadas para maximizar o sucesso das suas campanhas de marketing de influência. Trabalhamos em conjunto, analisando seu público-alvo e definindo metas claras.
             </DescriptionText>
           </DescriptionBox>
         )}
 
           {showBud && (
           <DescriptionBox>
-            <Image src={bud} alt="Budget" />
-            <DescriptionTitle>Briefing Criativo</DescriptionTitle>
-            <DescriptionText>Negociação e gestão de contratos com os influenciadores;</DescriptionText>
+            <Image src={bud} alt="Assessoria" />
+            <DescriptionTitle>Assessoria</DescriptionTitle>
+            <DescriptionText> Oferecemos uma assessoria estratégica personalizada. Acompanhamos suas campanhas, além de oferecer consultoria especializada para otimizar sua estratégia. </DescriptionText>
           </DescriptionBox>
         )}
 
           {showAcom && (
           <DescriptionBox>
-            <Image src={acom} alt="Acompanhamento de resultados " />
-            <DescriptionTitle>Acompanhamento de resultados </DescriptionTitle>
-            <DescriptionText>Relatórios e feedback para o cliente.</DescriptionText>
+            <Image src={acom} alt="Algoritmo " />
+            <DescriptionTitle>Algoritmo</DescriptionTitle>
+            <DescriptionText> oferecemos uma assessoria estratégica personalizada. Acompanhamos suas campanhas, além de oferecer consultoria especializada para otimizar sua estratégia. </DescriptionText>
           </DescriptionBox>
         )}
 
 
 </MainContainer>
+      
+<ImageFoot src={foot} alt="Prospec" />
+
 </>
 );
 };

@@ -42,9 +42,9 @@ export function Section2 () {
             // adicione mais itens aqui  ];
 
          return (
-          <>
+          <div id="parcerias" >
           
-          <Titulo id="parcerias" >Nossas Parcerias</Titulo>
+          <Titulo >Nossas Parcerias</Titulo>
           
               <ParceriasContainer>
                 
@@ -59,6 +59,6 @@ export function Section2 () {
                 ))}
               </MainContainer>
               </ParceriasContainer>
-              </>
+              </div>
             );
           }

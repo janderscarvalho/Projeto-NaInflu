@@ -11,25 +11,28 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 80px;
   top: 0;
-  border: #553268;
+  border: none;
   z-index: 1;
 
 
 @media (max-width: 767px) {
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 0.5rem;
   align-items: center;
   height: 6.5rem;
   padding: 2rem 1rem;
+  
 }
 `;
 
 export const Logo = styled.img`
-  
   @media (max-width: 767px) {
+    align-self: center;
     margin-right: 0;
-    margin-bottom: -1rem;
-    
+    margin-bottom: 0.3rem;
+    margin-top: 1.5rem;
+    border: none;
   }
 `;
 
@@ -62,6 +65,7 @@ export const Button = styled.button`
   @media (max-width: 767px) {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-weight: 400;
   }
 `;
 

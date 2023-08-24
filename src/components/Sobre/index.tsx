@@ -7,7 +7,10 @@ import mainft2 from '../../assets/somos.svg';
 
         return (
           <MainContainer id="sobre">
+
+
             <MainText>
+              
               <h2>Sobre nós</h2>
               <p>O que é um marketing de influência inovador, diferenciado e autentico? 
 A nossa missão tem como objetivo desmarketizar as estratégias de produção de conteúdo, com foco em humanizar a marca, gerando uma aproximidade maior de conexão, idenficação e engajamento com pessoas.  
@@ -18,6 +21,7 @@ Decidi expandir e compartilhar meu conhecimento com marcas e criadores para que 
 Formação em admiração e especialização em Marketing Digital. 
 
 </p>
+
             </MainText>
             <MainImage/>
           </MainContainer>

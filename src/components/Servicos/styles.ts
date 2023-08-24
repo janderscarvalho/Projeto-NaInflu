@@ -5,6 +5,7 @@ import produ from '../../assets/services/produ.svg';
 import brif from '../../assets/services/brif.svg';
 import gest from '../../assets/services/gest.svg';
 import bud from '../../assets/services/bud.svg';
+import foot from '../../assets/footer.svg';
 
 interface DescriptionOverlayProps {
   showDescription: boolean;
@@ -18,20 +19,22 @@ export const MainContainer = styled.div`
   padding: 0;
   border: 0;
   margin-top: 60vh;
-  transform: scale(0.9); /* Valor ajustado para diminuir a escala */
+  transform: scale(0.9);
+
+  
 
   @media (max-width: 768px) {
-    margin-top: 40vh;
+    margin-top: 50vh;
     margin-bottom: -15rem;
-    transform: scale(0.8); /* Valor ajustado para dispositivos móveis */
+    transform: scale(0.8); 
   }
 `;
 
 export const Title = styled.h1`
   font-family: 'Abel', sans-serif;
-  font-size: 4rem;
-  font-weight: 600;
-  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 2rem;
   padding: 2rem;
   text-align: center;
 `;
@@ -39,12 +42,12 @@ export const Title = styled.h1`
 export const ServicesGrid = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(3, minmax(270px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-gap: 3rem;
   margin: 0 auto;
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 1400px;
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
@@ -52,6 +55,7 @@ export const ServicesGrid = styled.div`
     justify-items: center;
   }
 `;
+
 
 export const Service = styled.div`
   position: relative;
@@ -105,11 +109,12 @@ export const DescriptionBox = styled.div`
   border-radius: 1rem;
   padding: 2rem;
   z-index: 2;
-  text-align: center;
+  text-align: left;
   max-width: 30%;
 
   @media (max-width: 768px) {
-    max-width: 40%;
+    max-width: 70%;
+    
   }
 `;
 
@@ -123,7 +128,14 @@ export const DescriptionTitle = styled.h3`
 
 export const DescriptionText = styled.p`
   font-family: 'Abel', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #555;
   margin: 1rem 0;
+`;
+
+export const ImageFoot = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
 `;
