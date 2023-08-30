@@ -7,7 +7,7 @@ import produ from '../../assets/services/produ.svg';
 import brif from '../../assets/services/brif.svg';
 import gest from '../../assets/services/gest.svg';
 import bud from '../../assets/services/bud.svg';
-import foot from '../../assets/footer.svg';
+import foot from '../../assets/main.svg';
 
 
 
